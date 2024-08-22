@@ -1,0 +1,14 @@
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/bin/Debug/net8.0/TestResultsConverter
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/bin/Debug/net8.0/TestResultsConverter.deps.json
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/bin/Debug/net8.0/TestResultsConverter.runtimeconfig.json
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/bin/Debug/net8.0/TestResultsConverter.dll
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/bin/Debug/net8.0/TestResultsConverter.pdb
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.AssemblyInfoInputs.cache
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.AssemblyInfo.cs
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.csproj.CoreCompileInputs.cache
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.dll
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/refint/TestResultsConverter.dll
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.pdb
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.genruntimeconfig.cache
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/ref/TestResultsConverter.dll
