@@ -1,0 +1,23 @@
+[
+    {
+        "testCase": "test1",
+        "status": "Failed",
+        "executionTime": 8,
+        "startTime": "08-21-2024 14:30:34",
+        "endTime": "08-21-2024 14:30:50"
+    },
+    {
+        "testCase": "test2",
+        "status": "Passed",
+        "executionTime": 16,
+        "startTime": "08-21-2024 14:30:34",
+        "endTime": "08-21-2024 14:30:50"
+    },
+    {
+        "testCase": "test3",
+        "status": "Failed",
+        "executionTime": 12,
+        "startTime": "08-21-2024 14:30:34",
+        "endTime": "08-21-2024 14:30:50"
+    }
+]

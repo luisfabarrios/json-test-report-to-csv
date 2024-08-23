@@ -1,0 +1,10 @@
+Total number of test cases executed,3
+Number of test cases passed,1
+Number of test cases failed.,2
+Average execution time for all test cases,12
+Minimum execution time among all test cases,8
+Maximum execution time among all test cases,16
+TestCase,Status,executionTime,startTime,endTime
+test1,Failed,8,08-21-2024 14:30:34,08-21-2024 14:30:50
+test2,Passed,16,08-21-2024 14:30:34,08-21-2024 14:30:50
+test3,Failed,12,08-21-2024 14:30:34,08-21-2024 14:30:50

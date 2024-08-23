@@ -12,3 +12,4 @@
 /Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.pdb
 /Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.genruntimeconfig.cache
 /Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/ref/TestResultsConverter.dll
+/Users/luisalvarez/Documents/workspace/TestResultsConverter/TestResultsConverter/obj/Debug/net8.0/TestResultsConverter.sourcelink.json
