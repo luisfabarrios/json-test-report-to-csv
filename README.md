@@ -1,6 +1,6 @@
 # Project Overview
 
-## Project Name: Json test results to csv report
+## Json test results to csv report
 
 ## Description:
 
@@ -11,6 +11,7 @@ In every execution the files in the InputFiles folder are compared with the ones
 ## Technologies:
 
 C#
+
 .NET Core
 
 ## Getting Started
@@ -27,6 +28,7 @@ Building the Project:
  > dotnet build
 
 Running the Project
+
 Command line to be executed in the folder where the .csproj file is located
 
  > dotnet run
@@ -40,19 +42,21 @@ Command line to be executed in the folder where the .csproj file is located
 
 This JSON represents a list of test results
 
- > JSON
- > [
- >     {
- >         "testCase": "TestName",
- >         "status": "Passed",
- >         "executionTime": 16,
- >         "startTime": "08-21-2024 14:30:34",
- >         "endTime": "08-21-2024 14:30:50"
- >     }
- > ]
+```sh
+JSON
+[
+    {
+        "testCase": "TestName",
+        "status": "Passed",
+        "executionTime": 16,
+        "startTime": "08-21-2024 14:30:34",
+        "endTime": "08-21-2024 14:30:50"
+    }
+]
+```
 
-testCase: A string with the name of the test case
-status: A string with the status of the test, has two values Passed/Failed
-executionTime: An int with the execution time of the test in seconds
-startTime: A string with the start time/hour of the test case
-endTime: A string with the end time/hour of the test case
+- testCase: A string with the name of the test case
+- status: A string with the status of the test, has two values Passed/Failed
+- executionTime: An int with the execution time of the test in seconds
+- startTime: A string with the start time/hour of the test case
+- endTime: A string with the end time/hour of the test case
