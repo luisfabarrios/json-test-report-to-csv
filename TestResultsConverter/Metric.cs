@@ -1,4 +1,6 @@
-
+/// <summary>
+/// This class represents the data structure of the final report
+/// </summary>
 public class Metric{
 
     public int TestsExecuted {get; set;}

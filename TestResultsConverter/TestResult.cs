@@ -1,19 +1,22 @@
 using System.Text.Json.Serialization;
 
+/// <summary>
+/// Template to map the json values to the c# object
+/// </summary>
 public class TestResult{
 
     [JsonPropertyName("testCase")]
-    public string TestCase {get; set;}
+    public required string TestCase {get; set;}
     
     [JsonPropertyName("status")]
-    public string Status {get; set;}
+    public required string Status {get; set;}
     
     [JsonPropertyName("executionTime")]
-    public int ExecutionTime {get; set;}
+    public required int ExecutionTime {get; set;}
     
     [JsonPropertyName("startTime")]
-    public string StartTime {get; set;}
+    public required string StartTime {get; set;}
     
     [JsonPropertyName("endTime")]
-    public string EndTime {get; set;}
+    public required string EndTime {get; set;}
 }

@@ -3,16 +3,24 @@ using System.Text.Json;
 
 public class Report{
 
+    /// <summary>
+    /// This method extracts the data in the .json file located in the
+    /// path and calculates the metrics
+    /// </summary>
+    /// <param name="inputFilePath">Path for the .json file to process</param>
+    /// <returns>Metric object with the calculated metrics and the records in the .son file</returns>
     private static Metric ExtractMetrics(string inputFilePath){
         
         var result = new Metric();
          
          try{
+            //Read the .son file with the test results
             string jsonString = File.ReadAllText(inputFilePath);
 
             // Deserialize JSON string into a C# object
             var jsonData = JsonSerializer.Deserialize<List<TestResult>>(jsonString);
             
+            //Calculate the metrics based on the data
             var testsExecuted = jsonData.Count;
             var testPassed = jsonData.Where(x => x.Status.Equals("Passed")).Count();
             var testFailed = jsonData.Where(x => x.Status.Equals("Failed")).Count();
@@ -20,6 +28,7 @@ public class Report{
             var minExecTime = jsonData.Select(x => x.ExecutionTime).Min();
             var maxExecTime = jsonData.Select(x => x.ExecutionTime).Max();
 
+            //List of the original records to be added at the end of the record
             List<string> records = new List<string>();
             records.Add("TestCase,Status,executionTime,startTime,endTime");
 
@@ -28,6 +37,7 @@ public class Report{
                 records.Add($"{ts.TestCase},{ts.Status},{ts.ExecutionTime},{ts.StartTime},{ts.EndTime}");
             }
 
+            //Creation of the Metric object with all the data required for the report
             result = new Metric(testsExecuted, testPassed, testFailed, avgExecTime, minExecTime, maxExecTime, records);
 
         }
@@ -42,8 +52,17 @@ public class Report{
         return result;
     }
 
+    /// <summary>
+    /// This method creates a .csv report with the calculated metrics based 
+    /// on the provided .json file and places it in the specified path with the 
+    /// same name as the original file but different extension
+    /// </summary>
+    /// <param name="inputFolderPath">Path for the .json file</param>
+    /// <param name="outputFolderPath">Path for new reports</param>
+    /// <param name="fileName">Name of the file to be process</param>
     public static void CreateReport(string inputFolderPath, string outputFolderPath, string fileName){
         
+        //Origin path of the .json file and destination path for the final report
         string inputFilePath = Path.Combine(inputFolderPath, $"{fileName}.json");
         string outputFilePath = Path.Combine(outputFolderPath, $"{fileName}.csv");
 
@@ -52,6 +71,7 @@ public class Report{
 
             StringBuilder csvContent = new StringBuilder();
 
+            //Creation of the report structure
             csvContent.AppendLine($"Total number of test cases executed,{metrics.TestsExecuted}");
             csvContent.AppendLine($"Number of test cases passed,{metrics.TestsPassed}");
             csvContent.AppendLine($"Number of test cases failed,{metrics.TestsFailed}");
@@ -64,6 +84,7 @@ public class Report{
                 csvContent.AppendLine(record);
             }
 
+            //Creation of the final report
             using (FileStream fs = File.Create(outputFilePath))
             using (StreamWriter writer = new StreamWriter(fs))
             {
