@@ -84,6 +84,12 @@ public class Report{
                 csvContent.AppendLine(record);
             }
 
+            //Verify output folder exits
+            if (!Directory.Exists(outputFolderPath))
+            {
+                Directory.CreateDirectory(outputFolderPath);
+            }
+
             //Creation of the final report
             using (FileStream fs = File.Create(outputFilePath))
             using (StreamWriter writer = new StreamWriter(fs))
